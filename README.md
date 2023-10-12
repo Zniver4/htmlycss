@@ -1,3 +1,3 @@
 # Jonathan Zavala
 
-- practica 1 3 parcial
+- practica 1-3parcial
