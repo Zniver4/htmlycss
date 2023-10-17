@@ -1,0 +1,19 @@
+{
+    "nombre": "Jonathan Zavala",
+    "edad": 18,
+    "profesor": false,
+    "alumno": true,
+    "materias": [
+      "Lenguajes Interpretados",
+      "Diseño de Interfaces",
+      "Desarrollo Web"
+    ],
+    "contacto": {
+      "correo": "jonathan4zacos@gmail.com",
+      "youtube": "@zniver4",
+      "movil": "5572177853",
+      "twitch": "@zniver4",
+      "tiktok": "@zniver4"
+    }
+  }
+  
