@@ -34,12 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function activarModoClaro() {
       const body = document.body;
   
-      body.style.backgroundColor = "#09533b";
+      body.style.backgroundColor = "#002EFF";
       body.style.color = "#ffffff";
   
       const elements = document.querySelectorAll(".modo-claro");
       for (let i = 0; i < elements.length; i++) {
-        elements[i].style.backgroundColor = "#09533b";
+        elements[i].style.backgroundColor = "#002EFF";
         elements[i].style.color = "#ffffff";
       }
     }

@@ -67,3 +67,9 @@ html {
   .bg-white {
     background-color: white;
   }
+  body {
+    margin: auto;
+    width: 940px; 
+    padding: 55px;
+  }
+  
