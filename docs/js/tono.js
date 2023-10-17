@@ -43,5 +43,42 @@ document.addEventListener("DOMContentLoaded", function () {
         elements[i].style.color = "#ffffff";
       }
     }
+  
+    let intervalId;
+  
+    function iniciarReloj() {
+      let reloj = document.getElementById("reloj");
+      intervalId = setInterval(() => {
+        let horaActual = getHora();
+        reloj.textContent = horaActual;
+      }, 1000);
+    }
+  
+    function detenerReloj() {
+      clearInterval(intervalId);
+    }
+  
+    function getHora() {
+      // Función para obtener la hora actual
+      let fecha = new Date();
+      let hora = fecha.getHours();
+      let meridiano = "AM";
+  
+      if (hora === 0) {
+        hora = 12;
+      } else if (hora > 12) {
+        hora = hora - 12;
+        meridiano = "PM";
+      }
+  
+      hora = hora.toString().padStart(2, "0");
+      let minuto = fecha.getMinutes().toString().padStart(2, "0");
+      let segundo = fecha.getSeconds().toString().padStart(2, "0");
+  
+      return `${hora}:${minuto}:${segundo} ${meridiano}`;
+    }
+  
+    // Iniciar el reloj al cargar la página
+    iniciarReloj();
   });
-
+  
