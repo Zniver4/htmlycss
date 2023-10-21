@@ -21,12 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function activarModoOscuro() {
       const body = document.body;
   
-      body.style.backgroundColor = "#1a1a1a";
+      body.style.backgroundColor = "#300013";
       body.style.color = "#ffffff";
   
       const elements = document.querySelectorAll(".modo-oscuro");
       for (let i = 0; i < elements.length; i++) {
-        elements[i].style.backgroundColor = "#1a1a1a";
+        elements[i].style.backgroundColor = "#300013";
         elements[i].style.color = "#ffffff";
       }
     }
@@ -34,12 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function activarModoClaro() {
       const body = document.body;
   
-      body.style.backgroundColor = "#002EFF";
+      body.style.backgroundColor = "#042608";
       body.style.color = "#ffffff";
   
       const elements = document.querySelectorAll(".modo-claro");
       for (let i = 0; i < elements.length; i++) {
-        elements[i].style.backgroundColor = "#002EFF";
+        elements[i].style.backgroundColor = "#042608";
         elements[i].style.color = "#ffffff";
       }
     }

@@ -4,6 +4,10 @@ html {
     font-size: 16px;
     color: #f0f8ff;
     scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
   a {
     color: cyan;
@@ -21,10 +25,6 @@ html {
   video {
     max-width: 100%;
     height: auto;
-  }
-  td,
-  th {
-    border: 1px solid white;
   }
   iframe {
     max-width: 100%;
@@ -73,3 +73,17 @@ html {
     padding: 55px;
   }
   
+  .my-custom-table {
+    border-collapse: collapse; /* Elimina el espaciado entre celdas */
+}
+
+.my-custom-table th,
+.my-custom-table td {
+    border: 1px solid #ffff; /* Agrega un borde a las celdas, ajusta el color y el grosor según tus preferencias */
+    padding: 8px; /* Añade relleno alrededor del contenido de las celdas */
+}
+
+.my-custom-table th {
+    background-color: #f0f0f0; /* Cambia el color de fondo de las celdas de encabezado */
+    font-weight: bold; /* Aplica negrita al texto en las celdas de encabezado */
+}
